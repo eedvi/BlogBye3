@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="{{url_for('static', filename= 'pics/cat.svg')}}"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
+    {% block additional_styles %} <!-- Area to add new styles for the differents sections -->
+   
+    {% endblock %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bye3</title>
+  </head>
+  <body>
+      <div><!-- Navigation area, here we have the menu to navigate inside the page -->
+        <div class="window">
+          <div class="title-bar">
+            <h1 class="title" style="font-family: PP; font-size:5;">/ᐠ-༝-ᐟ\</h1>
+          </div>
+          <div class="details-bar">
+            <ul role="menu-bar">
+              <li role="menu-item" tabindex="0" aria-haspopup="true">
+                Menu
+                <ul role="menu">
+                  <li role="menu-item"><a href="{{url_for('home')}}">Home</a></li>
+                  <li role="menu-item"><a href="{{url_for('whiteB')}}">White Board</a></li>
+                  <li role="menu-item"><a href="{{url_for('music')}}">Music</a></li>
+                  <li role="menu-item" class="divider"><a href="{{url_for('Gallery')}}">Gallery</a></li>
+                  <li role="menu-item"><a href="https://www.instagram.com/eed.vi/" target="_blank">Instagram</a></li>
+                </ul>
+              </li>
+              {% block bar %}<!-- agregamos el contenido distintivo de cada pagina -->
+              {% endblock %}
+          </div>
+          <div class="window-pane" >
+          {% block content%}
+          {% endblock%}
+         
+        
+      </div>
+     
+  </body>
+</html>
+
+

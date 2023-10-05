@@ -1,0 +1,132 @@
+{% extends"layout.html" %}
+
+{% block additional_styles %}
+<link href="{{ url_for('static', filename='css/subStyle.css') }}" rel="stylesheet" />
+    {% endblock %}
+
+
+
+{% block content%}
+            <div class="grid-container">
+              <div class="grid-item grid-item-1">
+                <img
+                  src="{{url_for('static', filename='pics/lookMWindow.jpg')}}"
+                  alt=""
+                  data-index="1"
+                />
+                <p>Through my window.</p>
+              </div>
+              <div class="grid-item grid-item-2">
+                <img
+                  src="{{url_for('static', filename='pics/onceInMyEyes.jpg')}}"
+                  alt=""
+                  data-index="2"
+                />
+                <p>jeje</p>
+              </div>
+              <div class="grid-item grid-item-3">
+                <img
+                  src="{{url_for('static', filename='pics/1643676556300.jpg')}}"
+                  alt="cherry"
+                  data-index="3"
+                />
+                <p>Dog</p>
+              </div>
+              <div class="grid-item grid-item-4">
+                <img
+                  src="{{url_for('static', filename='pics/cubes.jpg')}}"
+                  alt=""
+                  data-index="4"
+                />
+                <p>
+                  Ice and cubes, in their simplicity, they show, Even in the
+                  simple, there's a delicate glow.
+                </p>
+              </div>
+              <div class="grid-item grid-item-5">
+                <img
+                  src="{{url_for('static', filename='pics/hedoro.jpg')}}"
+                  alt=""
+                  data-index="5"
+                />
+                <p>Dorohedoro</p>
+              </div>
+              <div class="grid-item grid-item-6">
+                <img
+                  src="{{url_for('static', filename='pics/family.jpg')}}"
+                  alt=""
+                  data-index="6"
+                />
+                <p>
+                  Masters of the sleeping hours, in peace they lie, In the realm
+                  of dreams, where souls do fly.
+                </p>
+              </div>
+              <div class="grid-item grid-item-7">
+                <img
+                  src="{{url_for('static', filename='pics/lake2.jpg')}}"
+                  alt=""
+                  data-index="7"
+                />
+                <p>In the heart of Petén, where the sun lays to rest.</p>
+              </div>
+              <div class="grid-item grid-item-8">
+                <img
+                  src="{{url_for('static', filename='pics/lake.jpg')}}"
+                  alt=""
+                  data-index="8"
+                />
+                <p>
+                  Within this somber, tranquil scene, a certain beauty lies.
+                </p>
+              </div>
+              <div class="grid-item grid-item-9">
+                <img
+                  src="{{url_for('static', filename='pics/lateForSchool.jpg')}}"
+                  alt=""
+                  data-index="9"
+                />
+                <p>Streets fill with aimless steps, no goal in sight</p>
+              </div>
+              <div class="grid-item grid-item-10">
+                <img
+                  src="{{url_for('static', filename='pics/springInHome.jpg')}}"
+                  alt="Oysaumi Punpun"
+                  data-index="10"
+                />
+                <p>Flowers, in their fading, teach us how to gracefully go.</p>
+              </div>
+              <div class="grid-item grid-item-11">
+                <img
+                  src="{{url_for('static', filename='pics/doro.jpg')}}"
+                  alt=""
+                  data-index="11"/>
+              </div>
+              <div class="grid-item grid-item-12">
+                <img
+                  src="{{url_for('static', filename='pics/zelda.jpg')}}"
+                  alt=""
+                  data-index="12"
+                />
+                <p>C'mon</p>
+              </div>
+              <div class="grid-item grid-item-13">
+                <img
+                  src="{{url_for('static', filename='pics/puppy.jpg')}}"
+                  alt=""
+                  data-index="12"
+                />
+                <p>Yeaaaaa!</p>
+              </div>
+            </div>
+            
+            <div class="lightbox" id="lightbox">
+              <span class="close">&times;</span>
+              <img class="lightbox-content" id="lightbox-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="{{url_for('static', filename='js/galleryFun.js')}}"></script>
+
+{% endblock%}

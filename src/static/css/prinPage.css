@@ -1,0 +1,18 @@
+
+h1{
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  color: black;
+}
+p{
+  color: black;
+}
+
+.window-pane{
+  padding-top: 5rem;
+  border-bottom-style: solid;
+  padding-bottom: 5rem;
+}

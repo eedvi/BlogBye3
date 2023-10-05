@@ -1,0 +1,10 @@
+.grid-container {
+    padding: 15px ;
+  columns: 5 200px;
+  column-gap: 0.5rem;
+  width: auto;
+  margin: 0 auto;
+ div{
+    padding: 5px;
+ }
+}

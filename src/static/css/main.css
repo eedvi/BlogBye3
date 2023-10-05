@@ -1,0 +1,31 @@
+@font-face {
+  font-family: PP;
+  src: url(styleUtilities/MatrixSans-Screen.ttf);
+}
+body {
+  font-family: PP;
+}
+.window {
+  border-width: 2px;
+  height: auto;
+  width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 10px 10px 5px black;
+}
+ul[role="menu-bar"],
+li[role="menu-item"] {
+  font-family: PP;
+}
+p,
+h1 {
+  line-height: 1em;
+  font-family: PP;
+}
+
+.details-bar {
+  background-image: url("styleUtilities/disco.gif");
+}
+a{
+  font-family: PP;
+}

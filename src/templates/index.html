@@ -1,0 +1,20 @@
+{% extends"layout.html" %} 
+
+{% block additional_styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/prinPage.css') }}"
+/>
+{% endblock %} {% block content %}
+
+  <h1>Holaa</h1>
+  <p >
+    Este espacio fue concebido como un proyecto creativo para mi portafolio.<br />
+    Te invito a explorarlo, encontrarás una galería, sección de música y un <br />
+    tablero de dibujo.
+  </p>
+  <hr/>
+  <p>P. D. Gracias por estar aquíツ</p>
+  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a>
+
+{% endblock %}

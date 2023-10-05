@@ -1,0 +1,29 @@
+{% extends"layout.html" %}
+
+{% block additional_styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/boardStyle.css') }}">
+    {% endblock %}
+
+
+
+{% block bar %}
+<ul role="menu-bar">
+    <li role="menu-item" tabindex="0" aria-haspopup="true">
+      Tools
+      <ul role="menu">
+        <li role="menu-item"><a id="red-btn" href="#menu">Red</a></li>
+        <li role="menu-item"><a id="blue-btn" href="#menu">Blue</a></li>
+        <li role="menu-item"><a id="erase-btn" href="#menu">Eraser</a></li>
+      </ul>
+    </li>
+  </ul>
+{% endblock %}
+   
+{% block content%}
+<main class="main-container">
+    <canvas id="main-canvas" width="988" height="988">
+
+    </canvas>
+</main>
+<script src="{{url_for('static', filename='js/board.js')}}"></script>
+    {% endblock%}
