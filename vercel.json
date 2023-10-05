@@ -1,34 +1,38 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "src/index.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/static/css/styleUtilities/(.*)",
-        "dest": "src/static/css/styleUtilities/$1"
-      },
-      {
-        "src": "/static/css/(.*)",
-        "dest": "src/static/css/$1"
-      },
-      {
-        "src": "/static/js/(.*)",
-        "dest": "src/static/js/$1"
-      },
-      {
-        "src": "/static/pics/(.*)",
-        "dest": "src/static/pics/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "src/index.py"
-      }
-    ],
-    "env": {
-      "FLASK_ENV": "production"
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/index.py",
+      "use": "@vercel/python"
     }
+  ],
+  "routes": [
+    {
+      "src": "/static/css/styleUtilities/(.*)",
+      "dest": "src/static/css/styleUtilities/$1"
+    },
+    {
+      "src": "/static/css/(.*)",
+      "dest": "src/static/css/$1"
+    },
+    {
+      "src": "/static/js/(.*)",
+      "dest": "src/static/js/$1"
+    },
+    {
+      "src": "/static/pics/(.*)",
+      "dest": "src/static/pics/$1"
+    },
+    {
+      "src": "/templates/(.*)",
+      "dest": "src/templates/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "src/index.py"
+    }
+  ],
+  "env": {
+    "FLASK_ENV": "production"
   }
+}
